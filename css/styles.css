@@ -1,0 +1,90 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "novedades-main";
+  src: url("../assets/fonts/Cream Cake.otf"); }
+
+body {
+  background-image: url("../assets/img/fondos/fondo.jpg"); }
+  body header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(67, 67, 134, 0.675);
+    margin: .9375rem;
+    justify-content: space-between;
+    align-items: center; }
+    body header img {
+      padding: .625rem;
+      height: 10.625rem; }
+    body header div {
+      padding: .625rem; }
+      body header div h1,
+      body header div h2 {
+        color: goldenrod;
+        text-shadow: .0625rem .0625rem .1875rem black; }
+    body header #menu ul {
+      display: flex;
+      list-style: none; }
+      body header #menu ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(67, 67, 134, 0.675); }
+        body header #menu ul ul li {
+          float: none;
+          width: 100px; }
+        body header #menu ul ul a {
+          line-height: 120%;
+          font-weight: bold;
+          padding: 10px 15px; }
+          body header #menu ul ul a:hover {
+            color: #ffb300; }
+      body header #menu ul a {
+        display: block;
+        color: #d9e8f0;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: .9375rem;
+        padding: .625rem; }
+        body header #menu ul a:hover {
+          color: #ffb300; }
+      body header #menu ul li {
+        position: relative;
+        float: left; }
+        body header #menu ul li:hover ul {
+          display: block; }
+  body main {
+    background-color: rgba(255, 228, 196, 0.924);
+    height: 50rem;
+    margin: .625rem; }
+    body main .news {
+      background-color: rgba(95, 117, 160, 0.489);
+      height: 1.875rem;
+      width: 100%; }
+      body main .news p {
+        padding-left: .625rem;
+        font-family: "novedades-main";
+        color: black;
+        font-size: 1.5rem; }
+    body main .card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin: 1.25rem; }
+      body main .card div {
+        width: 19.0625rem;
+        height: 29.375rem;
+        border-style: groove;
+        background-color: rgba(240, 255, 255, 0.705); }
+        body main .card div img {
+          height: 12.5rem; }
+        body main .card div span {
+          text-align: center; }
+          body main .card div span h2 {
+            padding: .3125rem; }
+          body main .card div span p {
+            font-size: 1.125rem; }

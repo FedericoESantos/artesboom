@@ -1,0 +1,140 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "novedades-main";
+    src:url("../assets/fonts/Cream\ Cake.otf");
+}
+body {
+    background-image: url("../assets/img/fondos/fondo.jpg");
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgba(67, 67, 134, 0.675);
+        margin: .9375rem;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            padding: .625rem;
+            height: 10.625rem;
+        }
+
+        div {
+            padding: .625rem;
+
+            h1,
+            h2 {
+                color: goldenrod;
+                text-shadow: .0625rem .0625rem .1875rem black;
+            }
+        }
+        // MENU DENTRO DEL HEADER PARA TODAS LAS PAGINAS
+        #menu ul {
+            display: flex;
+            list-style: none;
+            ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: rgba(67, 67, 134, 0.675);
+                li {
+                    float:none;
+                    width:100px;
+                }
+                a {
+                    line-height:120%;
+                    font-weight: bold;
+                    padding:10px 15px;
+                    &:hover {
+                        color: #ffb300;
+                    }
+                }
+            }
+
+            a {
+                display: block;
+                color: #d9e8f0;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: .9375rem;
+                padding: .625rem;
+                &:hover {
+                    color: #ffb300;
+                }
+            }
+
+            li {
+                position: relative;
+                float: left;
+
+                &:hover {
+                    ul{
+                        display:block;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    main{
+        background-color: rgba(255, 228, 196, 0.924);
+        height: 50rem;
+        margin: .625rem;
+        .news{
+            background-color: rgba(95, 117, 160, 0.489);
+            height: 1.875rem;
+            width: 100%;
+            p{
+                padding-left: .625rem;
+                font-family: "novedades-main";
+                color: rgb(0, 0, 0);
+                font-size: 1.5rem;
+            }
+        }
+
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin: 1.25rem;
+            div{
+                width: 19.0625rem;
+                height: 29.375rem;
+                border-style: groove;
+                background-color: rgba(240, 255, 255, 0.705);
+                img{
+                    height: 12.5rem ;
+                }
+                span{
+                    text-align: center;
+                    h2{
+                        padding: .3125rem;
+                    }
+                    p{
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+
+
+
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+
+}
