@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    width: auto;
+    height: 6.6875rem;
+    background-color: rgb(23, 23, 114);
+    justify-content: space-between;
+  }
+.img-nav{
+  height: 7.5rem;
+  margin-left: .625rem;
+}
+.carrito{
+  align-self: center;
+}
+.carrito img{
+  height: 3.125rem;
+  margin-right: .625rem;
+}
+.nav{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}  
