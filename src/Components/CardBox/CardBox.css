@@ -1,0 +1,113 @@
+.container{
+    margin: auto;
+    margin-top: 6.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.25rem;
+    justify-content: center;
+}
+.container a{
+    text-decoration: none;
+    color: yellow;
+    text-shadow: .125rem .25rem .125rem black;
+}
+.container-box{
+    width: 15.625rem;
+    height: 11.25rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: all 300ms;
+    margin: .3125rem;
+}
+.container-box:hover{
+    transform: translate(.3125rem, -0.3125rem);
+    box-shadow: -0.3125rem .375rem .625rem -0.3125rem whitesmoke;
+}
+.container-box h4, p{
+    position: relative;
+    margin-top: .625rem;
+    z-index: 1;
+    transition: all 200ms;
+}
+.container-box h4{
+    font-size: 1.875rem;
+}
+.container-box p{
+    transform: translateY(6.25rem);
+    opacity: 0;
+}
+.container-box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.container-box:hover h4{
+    color: red;
+    font-weight: bold;
+    text-shadow: .125rem .125rem .25rem black;
+}
+.box .back-hove{
+    width: 6.25rem;
+    height: 6.25rem;
+    background:goldenrod;
+    position: absolute;
+    top: 15.625rem;
+    left: -10.625rem;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(255, 149, 1),rgb(253, 194, 92));
+    opacity: 45%;
+}
+.container-box:hover .back-hove{
+    width: 25rem;
+    height: 25rem;
+    top: -4.375rem;
+    left: -4.375rem;
+}
+
+/* cambio de color para las cajas */
+
+.box2 .back-hove{
+    background: linear-gradient(to bottom, rgb(1, 31, 255),rgb(92, 143, 253));
+}
+.box3 .back-hove{
+    background: linear-gradient(to bottom, rgb(11, 132, 21),rgb(92, 253, 105));
+}
+.box4 .back-hove{
+    background: linear-gradient(to bottom, rgb(85, 10, 71),rgb(229, 100, 246));
+}
+.box5 .back-hove{
+    background: linear-gradient(to bottom, rgb(254, 212, 1),rgb(219, 226, 174));
+}
+.box6 .back-hove{
+    background: linear-gradient(to bottom, rgb(9, 172, 123),rgb(165, 202, 174));
+}
+
+/*imagenes de fondo para las cards*/
+
+.img-box1{
+    background-image: url("../../../public/img/card/quienes.jpg");
+    background-size: cover;
+}
+.img-box2{
+    background-image: url("../../../public/img/card/diseño.jpg");
+    background-size: cover;
+}
+.img-box3{
+    background-image: url("../../../public/img/card/cursos.jpg");
+    background-size: cover;
+}
+.img-box4{
+    background-image: url("../../../public/img/card/manualidades.jpg");
+    background-size: cover;
+}
+.img-box5{
+    background-image: url("../../../public/img/card/cocina.jpg");
+    background-size: cover;
+}
+.img-box6{
+    background-image: url("../../../public/img/card/juegos.jpg");
+    background-size: cover;
+}

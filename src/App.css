@@ -3,3 +3,13 @@
   padding: 0%;
   box-sizing: border-box;
 }
+body{
+  background-color: rgb(10, 10, 50);
+}
+.linea-fina{
+  height: 1px;
+}
+.linea-fina{
+  height: 2px;
+  background-color: black;
+}
