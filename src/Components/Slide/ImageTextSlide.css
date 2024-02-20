@@ -1,0 +1,30 @@
+.slide-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* Ajusta esta altura según el tamaño de tus imágenes */
+}
+
+.slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Esto asegura que la imagen cubra el contenedor sin perder sus proporciones */
+}
+
+.slide-container p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: yellow;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.25rem;
+    text-shadow: .25rem .25rem .125rem black;
+}
+.slice{
+    padding-top: .3125rem;
+}

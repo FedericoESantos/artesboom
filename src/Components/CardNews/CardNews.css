@@ -1,0 +1,20 @@
+.cardcontainer{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+}
+.cardnews{
+    width:17.8125rem;
+    height: 39.375rem;
+    background-color: beige;
+    text-align: center;
+    border-style:groove;
+}
+
+.cardnews img{
+    width: 17.5rem;
+    height: 25rem;
+}
+.cardnews .boxcard{
+    text-align: center;
+}

@@ -13,3 +13,11 @@ body{
   height: 2px;
   background-color: black;
 }
+.sabias{
+  display: flex;
+  justify-content: center;
+}
+.sabias img{
+  padding: .625rem;
+  height: 11.25rem;
+}
