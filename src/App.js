@@ -6,6 +6,7 @@ import CardBox from './Components/CardBox/CardBox';
 import Slide from './Components/Slide/Slide';
 import CardNews from './Components/CardNews/CardNews';
 import Sabias from "./Components/Sabias";
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <LineasH />
         <Sabias />
         <CardNews />
+        <Footer />
         
     </div>
   );
