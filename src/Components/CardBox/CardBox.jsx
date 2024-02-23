@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const CardBox = () => {
     return (
         <div className='container'>
-            <a href="/">
+            <Link to="/quienes">
                 <div className="container-box img-box1">
                     <div className="box box1">
                         <h4 className='title'>Quienes Somos</h4>
@@ -11,9 +12,9 @@ const CardBox = () => {
                         <div className="back-hove"></div>
                     </div>
                 </div>
-            </a>
+            </Link>
 
-            <a href="/">
+            <Link to="/diseño">
                 <div className="container-box img-box2">
                     <div className="box box2">
                         <h4 className='title'>Diseño Gráfico</h4>
@@ -21,9 +22,9 @@ const CardBox = () => {
                         <div className="back-hove"></div>
                     </div>
                 </div>
-            </a>
+            </Link>
 
-            <a href="/">
+            <Link to="/cursos">
                 <div className="container-box img-box3">
                     <div className="box box3">
                         <h4 className='title'>Cursos</h4>
@@ -31,9 +32,9 @@ const CardBox = () => {
                         <div className="back-hove"></div>
                     </div>
                 </div>
-            </a>
+            </Link>
 
-            <a href="/">
+            <Link to="/manualidades">
                 <div className="container-box img-box4">
                     <div className="box box4">
                         <h4 className='title'>Manualidades</h4>
@@ -41,9 +42,9 @@ const CardBox = () => {
                         <div className="back-hove"></div>
                     </div>
                 </div>
-            </a>
+            </Link>
 
-            <a href="/">
+            <Link to="/cocina">
                 <div className="container-box img-box5">
                     <div className="box box5">
                         <h4 className='title'>Cocina</h4>
@@ -51,9 +52,8 @@ const CardBox = () => {
                         <div className="back-hove"></div>
                     </div>
                 </div>
-            </a>
-
-            <a href="/">
+            </Link>
+            <Link to="/juegos">
                 <div className="container-box img-box6">
                     <div className="box box6">
                         <h4 className='title'>Ocio y Juegos</h4>
@@ -61,7 +61,7 @@ const CardBox = () => {
                         <div className="back-hove"></div>
                     </div>
                 </div>
-            </a>
+            </Link>
 
         </div>
     )

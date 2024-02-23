@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
     height: 18.75rem;
-    background-color: rgba(39, 39, 131, 0.219);
+    background-color: rgba(23, 23, 80, 0.678);
     display: flex;
     justify-content: space-between;
     padding: 1.25rem;
@@ -14,7 +14,7 @@
     margin-top: 1.875rem;
 }
 .redes .face img{
-    height: 3.75rem;
+    height: 2.5rem;
     padding-top: .3125rem;
 }
 .redes .face p{
@@ -27,7 +27,7 @@
     display: flex;
 }
 .redes .insta img{
-    height: 3.75rem;
+    height: 2.5rem;
     padding-top: .3125rem;
 }
 .redes .insta p{
@@ -40,7 +40,7 @@
     display: flex;
 }
 .redes .whats img{
-    height: 3.75rem;
+    height: 2.5rem;
     padding-top: .3125rem;
 }
 .redes .whats p{
