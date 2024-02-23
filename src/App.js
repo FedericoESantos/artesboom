@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import './Components/Navbar/Navbar.css';
+import './Components/CardBox/CardBox.css';
 import Footer from './Components/Footer/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Quienes from './Components/PAGINAS/Quienes/Quienes';
