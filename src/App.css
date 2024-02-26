@@ -3,6 +3,14 @@
   padding: 0%;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Hello";
+  src: url("../public/typo/Hello-Whistle.otf");
+}
+@font-face {
+  font-family: "Amarillo";
+  src: url("../public/typo/Amarillo.otf");
+}
 body{
   background-image: url("../public/img/fondo-body.jpg");
   background-repeat: no-repeat;
@@ -114,6 +122,7 @@ body{
 
 }
 .titulo h1{
+  font-family: "Hello";
   color: whitesmoke;
   text-shadow: .125rem .125rem .25rem black;
   margin: 1.25rem;
@@ -131,8 +140,10 @@ body{
   justify-content: space-between;
 }
 .content-1 div h2{
+  font-family: "Amarillo";
   color: rgb(230, 222, 222);
   text-shadow: .125rem .125rem .25rem black;
+  padding-bottom: 1.25rem;
 }
 .content-1 img{
   padding: 1.25rem;
