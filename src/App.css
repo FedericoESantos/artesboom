@@ -221,3 +221,11 @@ div .titulo-cocina{
   text-shadow: .125rem .125rem .25rem black;
   font-size: 2.5rem;
 }
+
+.recetas-texto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 15.625rem;
+  height: auto;
+}

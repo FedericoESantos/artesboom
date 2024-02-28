@@ -15,10 +15,24 @@ const Cocina = () => {
                     <h2>Recetas Sabrosas</h2>
                 </div>
 
+                <div className="recetas-texto">
+
+                    <div className="card-recetas">
+                        <img src="" alt="" />
+                        <div>
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                    </div>
 
 
 
-                
+
+                </div>
+
+
+
+
             </div>
         </div>
     )
