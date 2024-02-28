@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
 
         <div className="logo-img">
-            <img src="./img/logo.png" alt="logo" />
+            <img src="./img/fotos/viejo-logo.png" alt="logo-viejo" />
         </div>
 
         </div>

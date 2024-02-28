@@ -41,7 +41,7 @@ body{
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
-  height: 96.875rem;
+  height: 100rem;
   margin-top: .625rem;
   text-align: center;
 }
@@ -80,14 +80,15 @@ body{
 }
 .cocina{
   background-image: url("../public/img/cocina.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
-  height: 56.25rem;
+  height: 75rem;
   margin-top: .625rem;
+  align-items: center;
 }
 .juegos{
   background-image: url("../public/img/juegos.jpg");
@@ -119,7 +120,6 @@ body{
   width: 100%;
   height: auto;
   justify-content: center;
-
 }
 .titulo h1{
   font-family: "Hello";
@@ -173,4 +173,51 @@ body{
 div .viejo-logo{
   padding: 1.25rem;
   width: 15.625rem;
+}
+
+/* PAGINA COCINA */
+.cocina div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.cocina div .titulo-coc{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(240, 255, 255, 0.466);
+  width: 25rem;
+  border-radius: 4.0625rem;
+  border-style: dashed;
+  margin: 2.1875rem;
+}
+div .titulo-coc  p{
+  padding-left: .625rem;
+  padding-right:  .625rem;
+}
+div .ultimo-p{
+  padding-bottom: 1.875rem;
+}
+div .titulo-cocina{
+  color: rgb(245, 235, 201);
+  text-shadow: .125rem .125rem .25rem black;
+  font-family: "Hello";
+}
+.recetario{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 4.375rem;
+  background-color: rgba(255, 251, 240, 0.651);
+  padding: 1.25rem;
+  justify-content:center;
+
+}
+.recetario h2{
+  font-family: "Hello";
+  color: rgb(255, 196, 0);
+  text-shadow: .125rem .125rem .25rem black;
+  font-size: 2.5rem;
 }
