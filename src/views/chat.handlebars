@@ -1,0 +1,99 @@
+<div class="header">
+    <img src="/img/viejo-logo.png" alt="logo">
+    <div class="sub-header">
+        <h1>Bienvenidos a "Boom Arts"</h1>
+        <div>
+            <nav>
+                {{>menu}}
+            </nav>
+        </div>
+        <div class="texto-bienvenida">
+            <p>Una Explosión Artística a tus Sentidos!!!</p>
+        </div>
+    </div>
+
+    <div class="search">
+        <form action="post">
+            <label for="search">Buscador</label>
+            <input type="text" name="text" id="search" placeholder="Ingrese su busqueda" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="iconos">
+            <a href="/chat"><img src="img/iconos/home/chat.png" alt="chat">Chat</a>
+            <a href="/fotos"><img src="img/iconos/home/foto.png" alt="foto">Fotos</a>
+            <a href="/literatura"><img src="img/iconos/home/libro.png" alt="literatura">Literatura</a>
+            <a href="/juegos"><img src="img/iconos/home/juegos.png" alt="juegos">Juegos</a>
+        </div>
+    </div>
+</div>
+
+{{!-- AQUI COMIENZA EL MAIN --}}
+
+<div class="main">
+
+    <div class="chat">
+        <h2>Chat</h2>
+        <span>Bienvenidos al chat de la comunidad amistosa</span>
+        <div class="cont-chat">
+            <div id="mensajes">
+
+            </div>
+        </div>
+
+        <form id="chat-form">
+            <input type="text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí" required> {{!-- cuando escribamos aca se emitira un mensaje --}}
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+</div>
+
+{{!-- FOOTER --}}
+<hr>
+<div class="footer">
+
+    <div class="gps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.5310748387606!2d-57.951977811446405!3d-34.918215604142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e624d3416e3b%3A0x47471c8a471ea576!2sC.%2055%20642%2C%20B1900BGZ%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714487123773!5m2!1ses!2sar"
+            height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div>
+    {{>menuFooter}}
+
+<br><br>
+        <div class="contactos">
+            <div class="face">
+                <img src="./img/iconos/facebook.png" alt="logo-face">
+                <p> : /boomArts</p>
+            </div>
+            <div class="instagram">
+                <img src="./img/iconos/instagram.png" alt="logo-face">
+                <p> : /boomArts</p>
+            </div>
+            <div class="whatsapp">
+                <img src="./img/iconos/whatsapp.png" alt="logo-face">
+                <p> : 221 304-1421</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="logo">
+        <img src="./img/viejo-logo.png" alt="logo">
+    </div>
+
+</div>
+
+{{! ------------------------------------------------------------------------------------------------------------ --}}
+
+{{!-- IMPORTAMOS LA LIBRERIA DE SWEET ALERT - LA LIBRERIA DE SOCKET - EL ARCHIVO CHAT.JS DE LA CARPETA JS DEL CHAT --}}
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{{!-- aca insertamos la libreria sweet alert para el chat que son ventanas emergentes => js --}}
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>
+{{!-- este ultimo js va a ser un contenido estatico por lo tanto va a estar dentro de la carpeta public => js --}}

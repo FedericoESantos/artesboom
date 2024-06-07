@@ -1,0 +1,1207 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(81, 81, 129, 0.795);
+}
+
+/* ------- HEADER -------------- */
+
+.header {
+    display: flex;
+    background-color: rgb(61, 53, 99);
+    width: auto;
+    gap: 1.25rem;
+    padding: .625rem;
+    justify-content: space-between;
+    border-style: ridge;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header img {
+    display: flex;
+    width: 6.875rem;
+    flex-wrap: nowrap;
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.sub-header h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    color: goldenrod;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-header div nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub-header div nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1.25rem;
+}
+
+.sub-header div nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.sub-header div nav ul li a {
+    color: red;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-shadow: .125rem .125rem .25rem black;
+}
+
+.sub-header div nav ul li a:hover {
+    color: goldenrod;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+}
+.search .iconos{
+    display: flex;
+    gap: 1.25rem;
+    margin-top: .625rem;
+}
+.search .iconos a{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1875rem;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+.search .iconos a:hover{
+    color: #f7b605;
+}
+.search .iconos a img{
+    width: 3.125rem;
+    height: 3.75rem;
+}
+.search form {
+    flex-wrap: nowrap;
+    padding-right: .625rem;
+    width: auto;
+}
+
+.search form input {
+    flex-wrap: nowrap;
+}
+
+form label {
+    color: whitesmoke;
+    padding-right: .3125rem;
+}
+
+.texto-bienvenida p {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: "Courier New";
+    font-weight: bold;
+    color: beige;
+    border-right: .15em solid #f7b605;
+    animation: blink 1s steps(1) infinite;
+    animation: typing 4s steps(41) 1s 1 normal both, blink 1s steps(1) infinite;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 753px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .header h1 {
+        font-size: 1.5625rem;
+    }
+
+    .texto-bienvenida p {
+        font-size: .9375rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .texto-bienvenida p {
+        font-size: .75rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header h1 {
+        font-size: 1.375rem;
+    }
+
+    .search form {
+        text-align: center;
+    }
+}
+
+/* ------- MAIN con slider-------------- */
+
+.main{
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #cfa556c0;
+    width: 100%;
+}
+
+.slider{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: slide 12s infinite alternate linear;
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+/* ------- QUE ES EL ARTE -------------- */
+
+.presentacion {
+    display: flex;
+    padding-top: .9375rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(212, 196, 238, 0.719);
+}
+
+.presentacion img {
+    border-radius: 60%;
+    width: 15.625rem;
+    border-style: groove;
+}
+
+.presentacion h3 {
+    padding-left: .625rem;
+    font-size: 2.1875rem;
+    color: red;
+    text-shadow: .125rem .125rem .25rem black;
+}
+
+.presentacion div p {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 559px) {
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .presentacion img{
+        width: 9.375rem;
+    }
+    .presentacion h3{
+        font-size: 1.875rem;
+    }
+}
+
+/* ------- CARDS NOTICIAS-------------- */
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .card {
+    text-align: center;
+    align-items: center;
+    border-style: ridge;
+    width: 16.25rem;
+    height: 40rem;
+    background-color: rgba(223, 219, 199, 0.678);
+    overflow: hidden;
+}
+
+.card-container .card img{
+    padding-top: .3125rem;
+    height: 24.375rem;
+}
+.card-container .card a img{
+    height: 3.125rem;
+}
+
+.card .card-info{
+    padding: .625rem;
+}
+
+.chat img{
+    width: 21.875rem;
+    padding-left: .625rem;
+}
+@media screen and (max-width: 375px) {
+    .chat img{
+        width: 17.5rem;
+    }
+}
+
+/* ------- CARDS OCIO-------------- */
+
+.card-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: .9375rem;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------- FOOTER -------------- */
+
+.footer{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: rgb(62, 21, 100);
+    border-style: ridge;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: space-between;
+    padding: .625rem;
+}
+
+.footer .gps{
+    display: flex;
+    padding-left: .625rem;
+    max-width: 100%;
+}
+
+.footer div{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    gap: .625rem;
+}
+.footer .links{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 1.875rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .625rem;
+    margin-top: .625rem;
+    color: antiquewhite;
+}
+.footer div .links a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.25rem;
+}
+.footer div .links a:hover{
+    color: rgb(228, 171, 98);
+    text-shadow: .125rem .125rem .25rem black;
+}
+.footer .contactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.875rem;
+}
+.footer .contactos .face, .instagram, .whatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1.25rem;
+}
+.footer .contactos .face img, .instagram img, .whatsapp img{
+    height: 2.5rem;
+    width: 1.875rem;
+}
+.footer .contactos .face p, .instagram p, .whatsapp p{
+    color: antiquewhite;
+    text-align: center;
+}
+.footer .logo img{
+    padding-right: .625rem;
+    height: 9.375rem;
+    max-width: 100%;
+}
+@media screen  and (max-width: 684px){
+    .footer{
+        justify-content: center;
+    }
+    .footer .contactos{
+        margin-top: 5.625rem;
+    }
+}
+
+
+/* ......... PAGINA DE ............. */
+/* ------- HISTORIA -------------- */
+
+.cabecera{
+    background-color: #7c6334c0;
+    display: flex;
+    justify-content: space-between;
+    height: 9.5rem;
+    width: auto;
+}
+.cabecera img{
+    height: 9.375rem;
+}
+
+@media screen  and (max-width: 720px){
+    .img3{
+        visibility: hidden;
+    }
+}
+@media screen  and (max-width: 545px){
+    .img1{
+        visibility: hidden;
+    }
+    .cabecera{
+        width: 100%;
+        justify-content: center;
+    }
+    .cabecera img{
+        padding-right: 3.125rem;
+    }
+}
+
+/* ----- ACA COMIENZA EL CONTENIDO ------ */
+
+.card1-cont{
+    width: 100%;
+    padding: .625rem;
+    display: flex;
+    gap: .625rem;
+
+}
+.card1-cont img{
+    width: 11.25rem;
+    height: 15.625rem;
+    border-style:dashed;
+    border-radius: 1.5625rem;
+}
+
+.card2-cont{
+    width: 100%;
+    padding: .625rem;
+    display: flex;
+    gap: .625rem;
+    justify-content: flex-end;
+}
+.card2-cont img{
+    width: 11.25rem;
+    height: 15.625rem;
+    border-style:dashed;
+    border-radius: 1.5625rem;
+}
+
+.main span{
+    font-size: 1.25rem;
+}
+.ultimo-pa{
+    text-align: center;
+}
+
+/* ......... PAGINA DE ............. */
+/* ------- DISEÑO -------------- */
+
+.cabecera-diseño{
+    background-color: #c9a505c0;
+    display: flex;
+    justify-content: space-between;
+    height: 9.5rem;
+}
+.cabecera-diseño img{
+    height: 9.375rem;
+}
+
+@media screen  and (max-width: 720px){
+    .img3{
+        visibility: hidden;
+    }
+}
+@media screen  and (max-width: 545px){
+    .img1{
+        visibility: hidden;
+    }
+    .cabecera-diseño{
+        width: 100%;
+        justify-content: center;
+    }
+    .cabecera-diseño img{
+        padding-right: 1.875rem;
+    }
+}
+
+/* ----- ACA COMIENZA EL CONTENIDO ------ */
+
+/* SECCION DISEÑO */
+
+.main .secciones .disenio{
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    height: auto;
+    padding-left: .9375rem;
+    background-color:rgba(230, 204, 148, 0.336);
+    align-items: center;
+    justify-content: center;
+}
+.main .secciones .disenio .titulo{
+    background-color: #f7b705ad;
+    border-radius: 1.875rem;
+    padding: .9375rem;
+    height: auto;
+}
+.main .secciones .disenio p{
+    padding-left: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.main .secciones .disenio .card{
+    flex: 1 1 15.625rem; /* Permitir que las tarjetas crezcan y se encojan */
+    max-width: 20rem; /* Ancho máximo para las tarjetas */
+    background-color: rgb(223, 193, 155);
+    border-style: groove;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    text-align: center;
+    margin: .9375rem;
+    flex-wrap: wrap;
+}
+.main .secciones .disenio .card img{
+    height: 9.375rem;
+    width: 100%;
+}
+.main .secciones .disenio .card .card-info p{
+    text-align: center;
+}
+.main .secciones .disenio .card .card-info p{
+    padding-top: .3125rem;
+}
+.main .secciones .disenio .card .card-info button{
+    margin: .3125rem;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 30%;
+    font-weight: bold;
+    color: rgb(49, 49, 131);
+}
+.main .secciones .disenio .card .card-info button:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+@media screen  and (max-width: 1030px){
+    .main .secciones .disenio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .secciones .disenio .titulo{
+        text-align: center;
+        margin: .625rem;
+    }
+    .main .secciones .disenio p{
+        text-align: center;
+        margin: .625rem;
+    }
+    .main .secciones .disenio .card {
+        flex: 1 1 100%; /* Hacer que las tarjetas ocupen todo el ancho disponible */
+        max-width: none; /* Remover el ancho máximo */
+    }
+
+}
+
+/* SECCION MANUALIDADES */
+
+.main .secciones .manualidades{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-left: .9375rem;
+    background-color:rgba(148, 230, 173, 0.336);
+    align-items: center;
+    justify-content: center;
+}
+.main .secciones .manualidades .titulo2{
+    background-color: #7beb78ad;
+    border-radius: 1.875rem;
+    padding: .9375rem;
+    height: auto;
+    width: auto;
+}
+.main .secciones .manualidades h2{
+    text-align: right;
+}
+.main .secciones .manualidades p{
+    padding-left: 1.25rem;
+    font-size: 1.25rem;
+    text-align: right;
+}
+
+.main .secciones .manualidades .card{
+    flex: 1 1 15.625rem; /* Permitir que las tarjetas crezcan y se encojan */
+    max-width: 10rem; /* Ancho máximo para las tarjetas */
+    background-color: rgb(170, 185, 160);
+    border-style: groove;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    text-align: center;
+    margin: .9375rem;
+}
+.main .secciones .manualidades .card img{
+    height: 9.375rem;
+    width: 100%;
+}
+
+.main .secciones .manualidades .card .card-info p{
+    padding-top: .3125rem;
+}
+.main .secciones .manualidades .card .card-info button{
+    margin: .3125rem;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 30%;
+    font-weight: bold;
+    color: rgb(49, 49, 131);
+}
+.main .secciones .manualidades .card .card-info button:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+@media screen  and (max-width: 1030px){
+    .main .secciones .manualidades{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .secciones .manualidades .titulo2{
+        text-align: center;
+        margin: .625rem;
+    }
+    .main .secciones .manualidades p{
+        text-align: center;
+        margin: .625rem;
+    }
+    .main .secciones .manualidades .card {
+        flex: 1 1 100%; /* Hacer que las tarjetas ocupen todo el ancho disponible */
+        max-width: none; /* Remover el ancho máximo */
+    }
+}
+
+/* SECCION CINE Y COMIC */
+
+.main .secciones .cine-comic{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color:rgba(121, 195, 255, 0.336);
+    align-items: center;
+}
+
+/* SECCION CINE */
+
+.main .secciones .cine-comic .cine{
+    display: flex;
+    padding: .625rem;
+    width: 50%;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-style: groove;
+}
+.main .secciones .cine-comic .cine .cine-cont{
+    display: flex;
+}
+
+@media screen  and (max-width: 560px){
+    .main .secciones .cine-comic .cine .cine-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+.main .secciones .cine-comic .cine .cine-cont .titulo3{
+    background-color: #cac6ecad;
+    border-radius: 3.125rem;
+    padding: .9375rem;
+    width: 8.125rem;
+    height: 6.875rem;
+}
+.main .secciones .cine-comic .cine .cine-cont .titulo3 h2{
+    color: red;
+}
+
+.main .secciones .cine-comic .cine .cards-cineCont{
+    display: flex;
+    margin: .625rem;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main .secciones .cine-comic .cine .cards-cineCont .card-cine .card-cine-info{
+    width: 8.4375rem;
+    margin: .625rem;
+}
+.main .secciones .cine-comic .cine .cards-cineCont .card-cine .card-cine-info img{
+    height: 12.5rem;
+}
+
+/* SECCION COMIC */
+
+.main .secciones .cine-comic .comic{
+    width: 50%;
+    height: auto;
+    padding: .625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-style:groove;
+}
+
+.main .secciones .cine-comic .comic img{
+    width: 9.375rem;
+}
+
+.main .secciones .cine-comic .comic .comic-cont{
+    width: 100%;
+    height: auto;
+}
+
+.main .secciones .cine-comic .comic .comic-cont .card-comic-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main .secciones .cine-comic .comic .comic-cont .card-comic-info img{
+    width: auto;
+    height: 8.125rem;
+}
+
+@media screen  and (max-width: 515px){
+    .main .secciones .cine-comic .comic .comic-cont .card-comic-info img{
+        height: 5.625rem;
+}
+.main .secciones .cine-comic .comic .comic-cont .card-cine h2{
+    font-size: 1.375rem;
+}
+}
+
+/* ......... PAGINA DE ............. */
+/* ------- COCINA -------------- */
+
+.main .contenido-cocina{
+    display: flex;
+    margin-top: .625rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .contenido-cocina span{
+    text-align: center;
+}
+
+/* CONTENEDOR DE POSTRES */
+
+.main .contenido-cocina .postres{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: .625rem;
+    background-color: #f7b7058a;
+    border-style: groove;
+    text-align: center;
+}
+
+.main .contenido-cocina .postres .postres-cont{
+    display: flex;
+    gap: .9375rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ACA VA LA CONFIGURACION DE LA CARD*/
+
+.main .contenido-cocina .postres .postres-cont .postres-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    border-style: groove;
+    width: 15.625rem;
+    height: auto;
+}
+
+.main .contenido-cocina .postres .postres-cont .postres-card img{
+    width: 100%;
+    height: 12.5rem;
+    object-fit:cover;
+}
+
+.main .contenido-cocina .postres .postres-cont .postress-card .postres-card-info{
+    display: flex;
+    flex-direction: column;
+    margin: .9375rem;
+    width: auto;
+    height: 18.75rem;
+    border-style: groove;
+    background-color: blanchedalmond;
+    justify-content: center;
+    text-align: center;
+}
+.main .contenido-cocina .postres .postres-cont .postres-card .postres-card-info ul{
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.main .contenido-cocina .postres .postres-cont .postres-card .postres-card-info .extra-content {
+    display: none;
+    margin-top: 15px;
+}
+
+.main .contenido-cocina .postres .postres-cont .postres-card .postres-card-info .toggle {
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main .contenido-cocina .postres .postres-cont .postres-card .postres-card-info .toggle:hover {
+    text-decoration: underline;
+}
+
+/* CONTENEDOR DE COMIDAS */
+
+.main .comidas-elaboradas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: .625rem;
+    background-color: #056ef78a;
+    border-style: groove;
+    text-align: center;
+}
+
+.main .comidas-elaboradas .comidas-cont{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* ACA VA LA CONFIGURACION DE LA CARD*/
+
+.main .comidas-elaboradas .comidas-cont .comidas-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 15.625rem;
+    height: auto;
+    border-style: groove;
+}
+
+.main .comidas-elaboradas .comidas-cont .comidas-card img{
+    width: 100%;
+    height: 12.5rem;
+    object-fit:cover;
+}
+
+.main .comidas-elaboradas .comidas-cont .comidas-card .comidas-card-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+.main .comidas-elaboradas .comidas-cont .comidas-card .comidas-card-info ul{
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.main .comidas-elaboradas .comidas-cont .comidas-card .comidas-card-info .extra-content {
+    display: none;
+    margin-top: 15px;
+}
+
+.main .comidas-elaboradas .comidas-cont .comidas-card .comidas-card-info .toggle {
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main .comidas-elaboradas .comidas-cont .comidas-card .comidas-card-info .toggle:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTENEDOR DE TIPS */
+
+.main .tips{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: .625rem;
+    background-color: #05f7728a;
+    margin-bottom: .3125rem;
+    justify-content: center;
+}
+
+.main .tips h2{
+    text-align: center;
+}
+
+.main .tips .cont-tips{
+    width: 100%;
+    padding: .9375rem;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main .tips .cont-tips img{
+    max-width: auto;
+    height: 21.875rem;
+    padding: .625rem;
+}
+
+.main .tips .cont-tips .tips-celu{
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+.main .tips .cont-tips .tips-celu ul{
+    list-style: none;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+@media screen  and (max-width: 515px){
+    .main .tips .cont-tips img{
+        width: auto;
+        height: 250px;
+    }
+}
+/* ......... PAGINA DE ............. */
+/* ------- CURSOS -------------- */
+
+.main .contenido-cursos{
+    display: flex;
+    margin-top: .625rem;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.main .contenido-cursos h2, span{
+    padding: .625rem;
+}
+
+.main .contenido-cursos .informatica{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: .625rem;
+    background-color: #f729058a;
+    margin-bottom: .3125rem;
+}
+
+.main .contenido-cursos .tejidos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: .625rem;
+    background-color: #ce65e98a;
+    margin-bottom: .3125rem;
+}
+
+.main .contenido-cursos .fotografia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: .625rem;
+    background-color: #ebec7d8a;
+    margin-bottom: .3125rem;
+}
+
+
+/* ......... PAGINA DE ............. */
+/* ------- CONTACTO -------------- */
+
+.main .contenido-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 31.25rem;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(133, 159, 245);
+    box-sizing: border-box;
+}
+
+.main .contenido-contacto h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.main .contenido-contacto .form-group {
+    margin-bottom: 15px;
+}
+
+.main .contenido-contacto .form-group input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.main .contenido-contacto .form-group textarea {
+    resize: vertical;
+    min-height: 12.5rem;
+}
+
+.main .contenido-contacto form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.main .contenido-contacto form button:hover {
+    background-color: #0056b3;
+}
+
+/* ......... PAGINA DE ............. */
+/* ------- CHAT -------------- */
+
+.main .chat{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 98%;
+    max-width: 100%;
+    background-color: antiquewhite;
+    margin:.9375rem;
+    box-sizing: border-box;
+}
+.main .chat input{
+    max-width: 100%;
+    height: 1.875rem;
+    margin: .9375rem;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    resize: vertical;
+}
+.main .chat .cont-chat{
+    padding-bottom: .9375rem;
+    justify-items: center;
+    max-width: 100%;
+}
+
+.main .chat .cont-chat #mensajes{
+    height: 21.875rem;
+    margin-top: .9375rem;
+    overflow-y: scroll;
+    background-image: url("/img/chat/expo-chat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0rem 0rem .3125rem rgba(87, 160, 229, 0.426);
+    padding: .625rem;
+    background-color: rgb(145, 207, 245);
+    text-align: left;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main .chat .cont-chat .mensaje{
+    border: .0625rem solid black;
+    border-radius: .3125rem;
+    padding: .625rem;
+    background-color: rgba(239, 223, 182, 0.82);
+    display: inline-block;
+    margin: .125rem;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+#chat-form {
+    margin-bottom: 15px;
+}
+#chat-form input{
+    width:95%;
+}
+#chat-form button{
+    width:60px;
+    height: 30px;
+    font-weight: bold ;
+    color:red;
+}
+#chat-form button:hover{
+    background-color:goldenrod;
+    color:black;
+}
+
+
+/* ......... PAGINA DE ............. */
+/* ------- CARRITO -------------- */
+
+.main .carrito{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: 46.875rem;
+    background-color: rgb(162, 200, 209);
+    margin:.9375rem;
+}
+
+
+
+
+/* ......... PAGINA DE ............. */
+/* ------- LITERATURA -------------- */
+
+.main .literatura{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: 46.875rem;
+    background-color: rgb(253, 202, 134);
+    margin:.9375rem
+}
+
+
+
+/* ......... PAGINA DE ............. */
+/* ------- FOTOS -------------- */
+
+.main .fotos{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: 46.875rem;
+    background-color: rgb(255, 178, 249);
+    margin:.9375rem
+}

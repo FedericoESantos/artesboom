@@ -1,0 +1,1 @@
+const socket = io(); // aca importamos la libreria que pusimos con un script en main.handlebars

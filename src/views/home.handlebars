@@ -1,0 +1,207 @@
+<div class="header">
+    <img src="/img/viejo-logo.png" alt="logo">
+    <div class="sub-header">
+        <h1>Bienvenidos a "Boom Arts"</h1>
+        <div>
+            <nav>
+                {{>menu}}
+            </nav>
+        </div>
+        <div class="texto-bienvenida">
+            <p>Una Explosión Artística a tus Sentidos!!!</p>
+        </div>
+    </div>
+
+    <div class="search">
+        <form action="post">
+            <label for="search">Buscador</label>
+            <input type="text" name="text" id="search" placeholder="Ingrese su busqueda" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="iconos">
+            <a href="/chat"><img src="img/iconos/home/chat.png" alt="chat">Chat</a>
+            <a href="/fotos"><img src="img/iconos/home/foto.png" alt="foto">Fotos</a>
+            <a href="/literatura"><img src="img/iconos/home/libro.png" alt="literatura">Literatura</a>
+            <a href="/juegos"><img src="img/iconos/home/juegos.png" alt="juegos">Juegos</a>
+        </div>
+    </div>
+</div>
+
+{{!-- AQUI COMIENZA EL MAIN CON SLIDER--}}
+
+<div class="slider">
+    <ul>
+        <li><img src="./img/slider/slider1.jpg" alt="slider1"></li>
+        <li><img src="./img/slider/slider2.jpg" alt="slider2"></li>
+        <li><img src="./img/slider/slider3.jpg" alt="slider3"></li>
+        <li><img src="./img/slider/slider4.jpg" alt="slider4"></li>
+        <li><img src="./img/slider/slider5.jpg" alt="slider5"></li>
+        <li><img src="./img/slider/slider6.jpg" alt="slider6"></li>
+        <li><img src="./img/slider/slider7.jpg" alt="slider7"></li>
+        <li><img src="./img/slider/slider8.jpg" alt="slider8"></li>
+    </ul>
+</div>
+
+<hr>
+
+{{!-- presentacion que es el arte --}}
+
+<div class="presentacion">
+    <img src="./img/ojo-humano.jpg" alt="arte">
+    <h3>¿Que es el Arte para vos?</h3>
+    <div>
+        <p>Toda acción o manifestación de nuestros sentimientos</p>
+        <p>o emociones en toda creación es el significado principal</p>
+        <p>del concepto de Arte.</p>
+    </div>
+</div>
+
+<hr>
+
+{{!-- cards de noticias --}}
+
+<br>
+
+<div class="card-container">
+
+    <div class="card">
+        <img src="/img/noticias/papercraft.jpg" alt="papercraft">
+        <h3>Papercraft</h3>
+        <div class="card-info">
+            Sumergite en el hermoso mundo de las manualidades
+            y descubri como crear tus propias mascaras
+            de tus personajes favoritos.
+            Conocé el origen de este arte milenario
+            y sus creaciones.
+        </div>
+        <a href="#">
+            <img src="/img/iconos/cine/paperc.png" alt="icono-papercraft">
+        </a>
+    </div>
+
+
+    <div class="card">
+        <img src="/img/noticias/comic.jpg" alt="comic">
+        <h3>Comics</h3>
+        <div class="card-info">
+            El mundo de los comics en los últimos años
+            ha volado muy alto llevando al cine
+            muchas historias fascinantes.
+            Cada empresa han creado su propio
+            mundo y en cada uno infinitas historias.
+        </div>
+        <a href="/disenio#comic">
+            <img src="/img/iconos/cine/comic.png" alt="icono-comic">
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="/img/noticias/cine.jpg" alt="cine">
+        <h3>Cine</h3>
+        <div class="card-info">
+            Si sos cinéfilo y amante del cine
+            no te podes perder esta sección.
+            Avances de las películas mas esperadas.
+            e información ajustada a este hermoso mundo.
+            Y alguna sorpresita de más por aquí.
+        </div>
+        <a href="/disenio#cine">
+            <img src="/img/iconos/cine/cine.png" alt="icono-cine">
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="/img/noticias/tecnologia.jpg" alt="tecno">
+        <h3>Tecnología</h3>
+        <div class="card-info">
+            En el último siglo la revolución
+            de la tencología ha generado mucha polemica.
+            Las personas cada vez están más conectada con una realidad
+            distinta a épocas pasadas. Lo que antes se vió solo en películas
+            de ciencia ficción hoy se ve en la vida diaria.
+        </div>
+        <a href="#">
+            <img src="/img/iconos/cine/tecno.png" alt="icono-tecnologia">
+        </a>
+    </div>
+
+    <div class="chat">
+        <a href="/chat"><img src="./img/sala-de-chat.png" alt="chat"></a>
+    </div>
+
+</div>
+
+{{!-- cards de ocio --}}
+
+<div class="card-container2">
+
+    <a href="/juegos">
+        <div class="car-ocio">
+            <div class="box1">
+                <h2>Juegos</h2>
+                <p>Distrae tu mente con esta secion de Ocio</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="/literatura">
+        <div class="car-ocio">
+            <div class="box2">
+                <h2>Literatura</h2>
+                <p>Historias narradas con el alma</p>
+                <div class="back-hove"></div>
+            </div>
+        </div>
+    </a>
+
+    <a href="/fotos">
+        <div class="car-ocio">
+            <div class="box box3">
+                <h2>Fotos</h2>
+                <p>Galería de fotos</p>
+                <div class="back-hove"></div>
+            </div>
+        </div>
+    </a>
+
+</div>
+
+{{!-- FOOTER --}}
+<hr>
+
+<div class="footer">
+
+    <div class="gps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.5310748387606!2d-57.951977811446405!3d-34.918215604142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e624d3416e3b%3A0x47471c8a471ea576!2sC.%2055%20642%2C%20B1900BGZ%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714487123773!5m2!1ses!2sar"
+            height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div>
+    {{>menuFooter}}
+
+<br><br>
+        <div class="contactos">
+            <div class="face">
+                <img src="./img/iconos/facebook.png" alt="logo-face">
+                <p> : /boomArts</p>
+            </div>
+            <div class="instagram">
+                <img src="./img/iconos/instagram.png" alt="logo-face">
+                <p> : /boomArts</p>
+            </div>
+            <div class="whatsapp">
+                <img src="./img/iconos/whatsapp.png" alt="logo-face">
+                <p> : 221 304-1421</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="logo">
+        <img src="./img/viejo-logo.png" alt="logo">
+    </div>
+
+</div>
